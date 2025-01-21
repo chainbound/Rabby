@@ -166,7 +166,7 @@ class TransactionWatcher {
       });
 
       return this._queryList(idQueue);
-    }, 5000);
+    }, 500); // This is the place to change for the polling interval! Original value: 5000
   };
 
   _queryList = async (ids: string[]) => {
